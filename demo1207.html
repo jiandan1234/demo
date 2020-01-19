@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .one{
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <table border="1" class="one" cellspacing='0'>
+     <thead>
+       <tr>
+         <th>性别</th>
+         <th>姓名</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td>女</td>
+         <td>史建英</td>
+       </tr>
+     </tbody>
+    </table>
+  </div>
+<script>
+  var data = [
+        {
+            name: '通过0条',
+            value: 33
+        }, {
+            name: '驳回0条',
+            value: 11
+        }, {
+            name: '待审批0条',
+            value: 22
+        }]
+        data.forEach(function (item, index) {
+        titleArr.push(
+            {
+                text: item.name,
+                left: index * 30 + 30 + '%',
+                top: '47%',
+                textAlign: 'right',
+                textStyle: {
+                    fontWeight: 'normal',
+                    fontSize: '13',
+                    color: colors[index][0],
+                    textAlign: 'relative',
+                    
+                },
+            }
+        );
+      console.log(item.name);
+</script>
+</body>
+</html>
